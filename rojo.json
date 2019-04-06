@@ -1,0 +1,15 @@
+{
+  "name": "DatamodelWatcher",
+  "servePort": 8000,
+  "partitions": {
+    "source": {
+      "target": "ReplicatedStorage",
+      "path": "source"
+    },
+
+    "testing": {
+      "target": "TestService",
+      "path": "testing"
+    }
+  }
+}
