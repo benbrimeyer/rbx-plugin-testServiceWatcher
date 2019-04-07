@@ -1,3 +1,6 @@
 return function(parent)
-	return parent:FindFirstChild("__watcher") and true or false
+	local object = parent:FindFirstChild("__watcher")
+	if object and object:IsA("StringValue") then
+		return object
+	end
 end

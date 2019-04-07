@@ -7,7 +7,7 @@ return function()
 		tag.Name = "__watcher"
 		tag.Parent = folder
 
-		expect(findTag(folder)).to.equal(true)
+		expect(findTag(folder)).to.equal(tag)
 
 		folder:Destroy()
 	end)
@@ -15,7 +15,7 @@ return function()
 	it("should return false if there is nothing in the container", function()
 		local folder = Instance.new("Folder")
 
-		expect(findTag(folder)).to.equal(false)
+		expect(findTag(folder)).to.equal(nil)
 
 		folder:Destroy()
 	end)
@@ -26,7 +26,18 @@ return function()
 		tag.Name = "foo-whatever"
 		tag.Parent = folder
 
-		expect(findTag(folder)).to.equal(false)
+		expect(findTag(folder)).to.equal(nil)
+
+		folder:Destroy()
+	end)
+
+	it("should return false if there are children in the container, but none are a string value", function()
+		local folder = Instance.new("Folder")
+		local tag = Instance.new("Folder")
+		tag.Name = "__watcher"
+		tag.Parent = folder
+
+		expect(findTag(folder)).to.equal(nil)
 
 		folder:Destroy()
 	end)
