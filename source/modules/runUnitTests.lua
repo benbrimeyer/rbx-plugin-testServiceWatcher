@@ -5,7 +5,7 @@ local TestService = game:GetService("TestService")
 local runUnitTests ={}
 
 local function isNextUndoRun()
-	local canUndo, nextUndo = ChangeHistoryService:CanUndo()
+	local canUndo, nextUndo = ChangeHistoryService:GetCanUndo()
 
 	return canUndo == false or nextUndo == "Run"
 end
