@@ -4,13 +4,8 @@ local TestService = game:GetService("TestService")
 
 local runUnitTests ={}
 
-local function isNextUndoRun()
-	local canUndo, nextUndo = ChangeHistoryService:GetCanUndo()
-
-	return canUndo == false or nextUndo == "Run"
-end
-
 function runUnitTests.start()
+	ChangeHistoryService:SetWaypoint("unitTests")
 	RunService:Run()
 	TestService:Run()
 	RunService:Stop()
@@ -18,9 +13,7 @@ function runUnitTests.start()
 end
 
 function runUnitTests.resetDatamodel()
-	while (isNextUndoRun()) do
-		ChangeHistoryService:Undo()
-	end
+	ChangeHistoryService:Undo()
 end
 
 return runUnitTests
