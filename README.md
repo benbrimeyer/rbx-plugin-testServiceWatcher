@@ -8,6 +8,7 @@ This plugin aims to eliminate the need to focus Roblox Studio to run these tests
 
 # .GIF Demo
 https://i.imgur.com/MBm8Fkn.gifv
+(I was lazy and the git is pretty wide. You may have to zoom out in-browser to see it all)
 
 
 # Setup
