@@ -1,5 +1,5 @@
 # rbx-plugin-testServiceWatcher
-This plugin was created to automatically run my unit tests whenever Rojo syncs module script code to watched directorties.
+This plugin was created to automatically run my unit tests whenever Rojo syncs module script code to watched directories.
 
 # Purpose
 The purpose of this module was to help accelerate my workflow as I develop my projects with TDD in mind. As I constantly switch tabs within VSCode to write tests and then write code that passes these tests, I had little time left to also switch my active window between VSCode and Roblox Studio.
@@ -7,7 +7,7 @@ The purpose of this module was to help accelerate my workflow as I develop my pr
 This plugin aims to eliminate the need to focus Roblox Studio to run these tests. Now I can focus on VSCode and keep an eye on the output window in Roblox Studio.
 
 # .GIF Demo
-(coming soon)
+![Screen demo of me using this plugin to fix a broken unit test](https://i.imgur.com/MBm8Fkn.gifv)
 
 
 # Setup
