@@ -7,7 +7,7 @@ The purpose of this module was to help accelerate my workflow as I develop my pr
 This plugin aims to eliminate the need to focus Roblox Studio to run these tests. Now I can focus on VSCode and keep an eye on the output window in Roblox Studio.
 
 # .GIF Demo
-![Screen demo of me using this plugin to fix a broken unit test](https://i.imgur.com/MBm8Fkn.gifv)
+https://i.imgur.com/MBm8Fkn.gifv
 
 
 # Setup
