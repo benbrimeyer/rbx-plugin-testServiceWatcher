@@ -1,9 +1,28 @@
 {
   "name": "rbx-plugin-testServiceWatcher",
   "tree": {
-    "$className": "Folder",
-    "Source": {
-      "$path": "source"
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Source": {
+        "$path": "source"
+      }
+    },
+
+    "TestService": {
+      "$className": "TestService",
+      "testMain": {
+        "$path": "testing/testMain.server.lua"
+      },
+
+      "TestEZ": {
+        "$path": "testez/lib"
+      },
+
+      "__watcher": {
+        "$path": "watcher.txt"
+      }
     }
   }
 }

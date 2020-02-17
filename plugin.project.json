@@ -1,0 +1,9 @@
+{
+	"name": "rbx-plugin-testServiceWatcher",
+	"tree": {
+	  "$className": "Folder",
+	  "Source": {
+		"$path": "source"
+	  }
+	}
+  }

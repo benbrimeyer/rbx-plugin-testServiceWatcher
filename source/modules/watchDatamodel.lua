@@ -61,6 +61,11 @@ function watchDatamodel:destruct()
 		connection:Disconnect()
 	end
 	self.connections = {}
+
+	for _, connection in pairs(self.cache) do
+		connection:Disconnect()
+	end
+	self.cache = {}
 end
 
 return watchDatamodel

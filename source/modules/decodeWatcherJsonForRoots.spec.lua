@@ -1,4 +1,5 @@
 return function()
+	print("HELLO WORLD")
 	local decodeWatcherJsonForRoots = require(script.Parent.decodeWatcherJsonForRoots)
 
 	it("should take json and return as an array one level deep", function()
@@ -22,8 +23,9 @@ return function()
 		local roots = decodeWatcherJsonForRoots(folder, '["target1", "target2"]')
 
 		expect(roots).to.be.ok()
-		expect(roots[1]).to.equal(target1)
-		expect(roots[2]).to.equal(target2)
+		fail("This is error2")
+		--[[expect(roots[1]).to.equal(target1)
+		expect(roots[2]).to.equal(target2)fffff]]
 	end)
 
 end
