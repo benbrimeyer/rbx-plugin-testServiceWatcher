@@ -23,9 +23,8 @@ return function()
 		local roots = decodeWatcherJsonForRoots(folder, '["target1", "target2"]')
 
 		expect(roots).to.be.ok()
-		fail("This is error2")
-		--[[expect(roots[1]).to.equal(target1)
-		expect(roots[2]).to.equal(target2)fffff]]
+		expect(roots[1]).to.equal(target1)
+		expect(roots[2]).to.equal(target2)
 	end)
 
 end
