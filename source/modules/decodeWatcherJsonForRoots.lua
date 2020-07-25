@@ -1,4 +1,3 @@
---fff
 local HttpService = game:GetService("HttpService")
 
 return function(parent, jsonString)
