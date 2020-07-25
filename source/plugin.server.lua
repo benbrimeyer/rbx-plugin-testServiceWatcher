@@ -21,7 +21,6 @@ local function startWatcher(value)
 	local roots = decodeWatcherJsonForRoots(game, value)
 	local watcher = watchDatamodel.new(roots):withSignal(signal)
 	watcher:start()
-	runUnitTests.withWatcher(watcher)
 
 	return function()
 		watcher:destruct()
